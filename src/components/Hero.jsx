@@ -50,11 +50,13 @@ const Hero = () => {
           I specialize in building modern, responsive web applications with a focus on great user experiences.
         </p>
         <a
-          href="https://drive.google.com/file/d/1oqIyBVtX6zNVGYA7yVCwJIpiCYi3d_4G/view?usp=drive_link" // Replace with the actual CV link
-          className="bg-zinc-900 text-yellow-600 font-bold py-2 px-6 rounded-lg shadow-sm hover:shadow-yellow-600 transition"
-        >
-          Download CV
-        </a>
+  href="https://drive.google.com/uc?export=download&id=1oqIyBVtX6zNVGYA7yVCwJIpiCYi3d_4G" // Updated link for direct download
+  className="bg-zinc-900 text-yellow-600 font-bold py-2 px-6 rounded-lg shadow-sm hover:shadow-yellow-600 transition"
+  download
+>
+  Download CV
+</a>
+
       </div>
     </div>
   );
