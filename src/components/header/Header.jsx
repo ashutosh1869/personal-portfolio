@@ -7,7 +7,7 @@ export default function Header() {
         <div className="flex justify-between items-center w-full mx-auto max-w-screen-xl">
           {/* Logo Section */}
           <a href="#">
-            <div className="font-bold text-lg text-gray-500 ml-2">
+            <div className="font-bold text-lg font-lavishly text-gray-500 ml-2">
               <span className="text-2xl text-yellow-600 pr-1">A</span>
               shutosh</div>
           </a>

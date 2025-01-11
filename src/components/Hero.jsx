@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
   const fullText = "Ashutosh...";
@@ -34,12 +35,12 @@ const Hero = () => {
     <div className="p-8 bg-zinc-800 min-h-screen flex items-center justify-center">
       <div className="text-center text-white">
         <img
-          src="src/images/ashu.jpg" // Replace with the actual profile image path
+          src="/images/ashu.jpg" // Replace with the actual profile image path
           alt="Profile"
           className="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto shadow-md hover:shadow-yellow-600 mb-6 border-4 border-yellow-600 transition"
         />
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Hi! I am <span className="text-yellow-600">{displayedText}</span>
+          Hi! I am <span className="text-yellow-600 font-serif">{displayedText}</span>
         </h1>
         <div className="w-fit shadow-yellow-600 shadow-sm rounded-lg mx-auto border-1 border-yellow-600">
         <h2 className="text-2xl md:text-3xl w-fit p-2 font-medium mb-6">{dynamicText}</h2>

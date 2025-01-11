@@ -5,21 +5,21 @@ const Projects = () => {
     {
       id: 1,
       title: "Blog App",
-      image: "src/images/projects/blogApp.png", // Replace with actual image path
+      image: "/images/projects/blogApp.png", // Replace with actual image path
       description: "A blog app built with React and Appwrite, enabling users to sign up, add, edit, and delete posts with ease.",
       link: "https://blog-app-1869.vercel.app/",
     },
     {
       id: 2,
       title: "To-Do List",
-      image: "src/images/projects/Todo.png", // Replace with actual image path
+      image: "/images/projects/Todo.png", // Replace with actual image path
       description: "A to-do list app built with React, enabling users to add, edit, and delete tasks with ease.",
       link: "https://to-do-five-dun.vercel.app/",
     },
     {
       id: 3,
       title: "Currency-Converter",
-      image: "src/images/projects/currency.png", // Replace with actual image path
+      image: "/images/projects/currency.png", // Replace with actual image path
       description: "A currency converter app built with React, enabling users to convert between different currencies.",
       link: "https://currency-converter-chi-three.vercel.app/",
     },
