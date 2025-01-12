@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Blog App",
       image: "/images/projects/blogApp.png", // Replace with actual image path
       description: "A blog app built with React and Appwrite, enabling users to sign up, add, edit, and delete posts with ease.",
-      link: "https://blog-app-1869.vercel.app/",
+      link: "https://blog-1869.vercel.app/",
     },
     {
       id: 2,
