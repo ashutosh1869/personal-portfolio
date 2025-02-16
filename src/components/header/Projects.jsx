@@ -26,13 +26,13 @@ const Projects = () => {
   ];
 
   return (
-    <div className="p-4 pb-10 pt-20 bg-zinc-800 h-fit" id="projects">
+    <div className="p-4 pb-10 pt-20  h-fit" id="projects">
       <h1 className="text-4xl font-bold text-center mb-8">My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-screen-lg">
         {projectData.map((project) => (
           <div
             key={project.id}
-            className="bg-zinc-900 rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105 hover:shadow-yellow-600"
+            className=" rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105 hover:shadow-yellow-600"
           >
             <img
               src={project.image}

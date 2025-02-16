@@ -30,16 +30,16 @@ const Skills = () => {
   ];
 
   return (
-    <div className="pt-20 pb-10 p-8 bg-zinc-800 h-fit " id="skills">
+    <div className="pt-20 pb-10 p-8  h-fit " id="skills">
       <h1 className="text-4xl font-bold text-center mb-8">My Skills</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 mx-auto max-w-screen-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mx-auto max-w-screen-lg">
         {skillsData.map((skill) => (
           <div
             key={skill.id}
-            className="bg-zinc-900 rounded-lg shadow-md p-6 transform transition-transform hover:shadow-yellow-600"
+            className=" rounded-lg shadow-md p-6 transform transition-transform hover:shadow-yellow-600"
           >
             <h2 className="text-2xl font-semibold mb-2">{skill.title}</h2>
-            <p className="text-gray-600">{skill.description}</p>
+            <p>{skill.description}</p>
           </div>
         ))}
       </div>

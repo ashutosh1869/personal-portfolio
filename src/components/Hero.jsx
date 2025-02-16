@@ -32,8 +32,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="p-8 bg-zinc-800 min-h-screen flex items-center justify-center">
-      <div className="text-center text-white">
+    <div className="p-8  min-h-screen flex items-center justify-center">
+      <div className="text-center">
         <img
           src="/images/ashu.jpg" // Replace with the actual profile image path
           alt="Profile"
