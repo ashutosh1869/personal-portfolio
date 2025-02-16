@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-
+import { useSelector } from "react-redux";
 
 const Hero = () => {
+  const isLightTheme = useSelector((state) => state.theme.theme === "light");
   const [displayedText, setDisplayedText] = useState("");
   const fullText = "Ashutosh...";
   const typingSpeed = 80; // Typing speed in milliseconds
@@ -43,20 +44,20 @@ const Hero = () => {
           Hi! I am <span className="text-yellow-600 font-serif">{displayedText}</span>
         </h1>
         <div className="w-fit shadow-yellow-600 shadow-sm rounded-lg mx-auto border-1 border-yellow-600">
-        <h2 className="text-2xl md:text-3xl w-fit p-2 font-medium mb-6">{dynamicText}</h2>
+          <h2 className="text-2xl md:text-3xl w-fit p-2 font-medium mb-6">{dynamicText}</h2>
 
         </div>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
           I specialize in building modern, responsive web applications with a focus on great user experiences.
         </p>
         <a
-  href="https://drive.google.com/uc?export=download&id=1GhOP578OvxIqzPh5byGA1qGlQHPQmBGB
+          href="https://drive.google.com/uc?export=download&id=1GhOP578OvxIqzPh5byGA1qGlQHPQmBGB
 " // Updated link for direct download
-  className=" text-yellow-600 font-bold py-2 px-6 rounded-lg shadow-sm hover:shadow-yellow-600 transition"
-  download
->
-  Download CV
-</a>
+          className={`${isLightTheme? 'bg-zinc-300':'bg-zinc-900'} text-yellow-600 font-bold py-2 px-6 rounded-lg shadow-sm hover:shadow-yellow-600 transition`}
+          download
+        >
+          Download CV
+        </a>
 
       </div>
     </div>
